@@ -2,6 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
     <style> 
       html {
         min-height: 100%;
@@ -12,12 +18,11 @@
         padding-bottom: 40px;
         background: linear-gradient(195deg, #001030, #051e4a, #0d2c65, #163a81, #1f499f, #2a59be, #3469de, #4079ff);
         color: rgba(255, 255, 255, 1.0);
+        font-family: "Open Sans";
       }
       a {
         color: rgba(255, 255, 255, 1.0);
-      }
-      * {
-        border: solid whitesmoke 5px;
+        text-decoration: none;
       }
       .avatar-image {
         width: 128px;
@@ -31,13 +36,40 @@
         object-fit: cover;
         border-radius: 48px;
       }
-      
-      .social-icons-row {
+      .main-container {
+        max-width: 640px;
+        margin: auto;
       }
-      .links-row {
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 30px;
+        font-weight: 400;
+      }
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 30px
+      }
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
       }
       .item {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(220, 220, 255, 0.5);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
       }
     </style>
   </head>
@@ -48,28 +80,30 @@
         <img class="avatar-image" src="me-image.png" alt="pic of me">
       </div>
 
-      <div class="name-row">Lillian Gunn</div>
+      <div class="name-row">
+        Lillian Gunn
+      </div>
 
       <div class="social-icons-row">
-        <a href="www.linkedin.com/in/lilly-gunn" target="_blank">LinkedIn</a>
+        <a href="www.linkedin.com/in/lilly-gunn" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
 
-        <a href="https://github.com/lsgunn11" target="_blank">Github</a>
+        <a href="https://github.com/lsgunn11" target="_blank"> <i class="fa-brands fa-square-github"></i> </a>
 
-        <a href="https://www.instagram.com/lilly.gnn?igsh=eXNveHJtN24zaDUw&utm_source=qr" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/lilly.gnn?igsh=eXNveHJtN24zaDUw&utm_source=qr" target="_blank"><i class="fa-brands fa-square-instagram"></i> </a>
       </div>
 
 
       <div class="links-row">
         <div class="item">
           <img class="thumbnail" src="thumbnails/jessica-johnston-92G0voshUr0-unsplash.jpg">
-          <a href="https://www.modernhoney.com/the-best-snickerdoodle-cookie-recipe/" target="_blank">
+          <a class="link-text" href="https://www.modernhoney.com/the-best-snickerdoodle-cookie-recipe/" target="_blank">
             Snickerdoodle Cookie Recipie
           </a>
         </div> 
 
         <div class="item">
           <img class="thumbnail" src="thumbnails/jakob-rosen-KA1WM_yQGF8-unsplash.jpg">
-          <a href="https://open.spotify.com/playlist/56YyrCn6RwY5Vm7JYFQiyI?si=180c27da81fb418a" target="_blank">
+          <a class="link-text" href="https://open.spotify.com/playlist/56YyrCn6RwY5Vm7JYFQiyI?si=180c27da81fb418a" target="_blank">
             Current Playlist
           </a>
         </div>
